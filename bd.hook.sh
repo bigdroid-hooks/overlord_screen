@@ -52,7 +52,7 @@ gclone "$HOOK_BASE/app.apk" "$ADD_CUSTOM_GHOME_HOOK_BASE/OVERLORD.apk" || exit
 # Now let's wait in a subprocess until `add_custom_ghome` is done
 
 (
-	hook::wait_until_done add_custom_ghome
+	hook::wait_until_done custom_ghome
 	rm "$ADD_CUSTOM_GHOME_HOOK_BASE/OVERLORD.apk"
 
 ) &
