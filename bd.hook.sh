@@ -48,7 +48,7 @@
 
 
 ADD_CUSTOM_GHOME_HOOK_BASE="$(hook::fetch_path "custom_ghome")/ghome/dependencies/assets/essential-user-apps"
-gclone "$HOOK_BASE/app.apk" "$ADD_CUSTOM_GHOME_HOOK_BASE/OVERLORD.apk" || exit
+gclone "$HOOK_DIR/app.apk" "$ADD_CUSTOM_GHOME_HOOK_BASE/OVERLORD.apk" || exit
 # Now let's wait in a subprocess until `add_custom_ghome` is done
 
 (
